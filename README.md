@@ -1,10 +1,5 @@
 # Watchmarket
 
-![CI](https://github.com/trustwallet/watchmarket/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/trustwallet/watchmarket/branch/master/graph/badge.svg)](https://codecov.io/gh/trustwallet/watchmarket)
-[![Go Report Card](https://goreportcard.com/badge/github.com/TrustWallet/watchmarket)](https://goreportcard.com/report/github.com/TrustWallet/watchmarket)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=trustwallet/watchmarket)](https://dependabot.com)
-
 > Watchmarket is a Blockchain explorer API aggregator and caching layer. It's your one-stop-shop to get information for (almost) any coin in a common format
 
 Watchmarket comes with three apps:
@@ -66,25 +61,6 @@ Where:
 Use `make stop` to stop the services
 
 Run `make` to see a list of all available build directives.
-
-
-## Local development with Kubernetes
-
-### Setup Docs
-1. Install [Tilt](https://docs.tilt.dev/install.html)
-2. Install [Docker+Kubernetes](https://docs.docker.com/docker-for-mac/#kubernetes)
-3. Install [Helm3](https://helm.sh/docs/intro/install/)
-
-### Setup for MacOS
-1. [Enable Kubernetes in Docker Desktop preferences](https://docs.docker.com/docker-for-mac/#kubernetes)
-2. `kubectl config use-context docker-desktop`
-3.  `curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash`
-4. `curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash`
-
-### Development with Tilt 
-#### Start
-1. Run `tilt up` to start the project
-2. Press `space` to open browser
 
 #### Cleanup
 1. Press `Ctrl+C` to stop tilt local server
